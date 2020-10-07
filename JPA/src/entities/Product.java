@@ -25,7 +25,7 @@ import lombok.EqualsAndHashCode;
 // This indicates for JPA that this is an entity class
 @Entity
 // Rename the table - its also possible to specify schema, catalog and indicies
-//@Table()
+//@Table(name="pr")
 // Add a named query, which can be referenced by name later
 @NamedQueries({
         @NamedQuery(

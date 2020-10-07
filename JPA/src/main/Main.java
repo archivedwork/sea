@@ -1,6 +1,7 @@
 package main;
 import java.io.IOException;
 
+import entities.Product;
 import utils.jpaUtils;
 import operations.*;
 import common.*;
@@ -16,8 +17,19 @@ public class Main {
             //Read.selectRecords(em);
 
             //---------- products ----------
-            //Create.insertSomeProducts(em);
+            Create.insertSomeProducts(em);
             //System.out.println("products inserted");
+            ProductOp.updateProductByPrimaryKey(em);
+            ProductOp.queryWithNamedParameter(em);
+            ProductOp.useNamedQuery(em);
+
+            // apply the changes above before clear the entity manager below
+            em.flush();
+
+            ProductOp.testProductCacheClearing(em);
+
+
+
 
             //----------- Cache ------------
             Cache.clearingCache(em);
