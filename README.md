@@ -1,4 +1,6 @@
-# Guideance
+# Guidance
+
+
 
 ## Java Installation
 
@@ -23,16 +25,16 @@ Press <enter> to keep the current choice[*], or type selection number:
 
 ## Derby Database connection
 
-- [ ] start derby  : `$ cd /home/mo/glassfish-5.1.0/glassfish5/javadb/bin` then `./startNetworkServer` it should start listening on port 1527 
-- [ ] host         : `localhost`
-- [ ] port         : `1527`
-- [ ] Database     : `testdb`
-- [ ] Username     : `APP`
-- [ ] password     : `APP`
-- [ ] full url     : `jdbc:derby://localhost/testdb;create=true` 
-- [ ] Note         : always create new database name to avoid conflicts if database already created it will give connection error message 
+- [X] start derby  : `$ cd /home/mo/glassfish-5.1.0/glassfish5/javadb/bin` then `./startNetworkServer` it should start listening on port 1527 
+- [X] host         : `localhost`
+- [X] port         : `1527`
+- [X] Database     : `testdb`
+- [X] Username     : `APP`
+- [X] password     : `APP`
+- [X] full url     : `jdbc:derby://localhost/testdb;create=true` 
+- [X] Note         : always create new database name to avoid conflicts if database already created it will give connection error message 
 
 
 ## Maven Notes
-- [ ] `persistence.xml` do not forget to put entity here 
-- [ ] 
+- [X] `persistence.xml` do not forget to put entity here 
+- [X] 
