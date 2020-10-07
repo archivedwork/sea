@@ -1,9 +1,12 @@
 package operations;
 
+import entities.Product;
+
 import static java.lang.System.out;
 import javax.persistence.*;
 
 public class Update {
+    // ------------------------ Book ---------------------------
     public static void updateRecords(EntityManager em) {
 
         // Update with criteria API
@@ -19,5 +22,13 @@ public class Update {
 
         }
     }
+
+
+
+
+
+
+
+
 
 }
